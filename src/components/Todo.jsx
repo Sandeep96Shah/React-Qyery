@@ -11,7 +11,7 @@ const Todos = () => {
   const { isPending, isError, data, error, isLoading, isFetching } = useQuery({
     queryKey: ["todos"],
     queryFn: fetchTodoList,
-    staleTime: Infinity
+    // staleTime: Infinity
   });
 
   console.log({isLoading, isFetching, isPending});
